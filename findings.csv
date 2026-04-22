@@ -1,0 +1,5 @@
+findings
+"{'field_detected': 'name', 'endpoint': '/report/preview', 'access_state': 'pre-authentication', 'sample_value': 'John Doe', 'severity': 'high'}"
+"{'field_detected': 'phone_number', 'endpoint': '/report/preview', 'access_state': 'pre-authentication', 'sample_value': '312-555-4821', 'severity': 'high'}"
+"{'field_detected': 'email', 'endpoint': '/report/preview', 'access_state': 'pre-authentication', 'sample_value': 'john.doe@example.com', 'severity': 'high'}"
+"{'field_detected': 'insurance_id', 'endpoint': '/report/preview', 'access_state': 'pre-authentication', 'sample_value': 'ABCD12345678', 'severity': 'high'}"

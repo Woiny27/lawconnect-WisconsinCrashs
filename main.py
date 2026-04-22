@@ -39,5 +39,20 @@ if __name__ == "__main__":
     final_report = auditor.generate_report()
     print(final_report)
 
+    # Write findings to findings.json
+    import json
+    with open("findings.json", "w") as f:
+        json.dump({"findings": auditor.findings}, f, indent=2)
+
+    # Export findings to CSV using pandas
+    try:
+        import pandas as pd
+        data = pd.read_json('findings.json')
+        df = pd.DataFrame(data['findings'])
+        df.to_csv('findings.csv', index=False)
+        print("Exported findings to findings.csv")
+    except Exception as e:
+        print(f"CSV export failed: {e}")
+
     # Example usage of CityProvider
     print(fake.city_name())
